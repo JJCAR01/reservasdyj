@@ -44,7 +44,7 @@ public class EntidadUsuario {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "usuario")
-    private List<EntidadRolUsuario> roles;
+    private List<EntidadRol> roles;
 
 }
 
