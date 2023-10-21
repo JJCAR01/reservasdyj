@@ -10,4 +10,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DtoEscenario {
+    private String nombre;
+    private String ubicacion;
+    private String valor;
+    private String reserva;
 }
