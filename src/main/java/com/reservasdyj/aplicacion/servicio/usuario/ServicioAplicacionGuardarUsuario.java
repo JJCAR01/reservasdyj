@@ -4,7 +4,7 @@ import com.reservasdyj.aplicacion.dto.DtoUsuario;
 import com.reservasdyj.aplicacion.dto.respuesta.DtoRespuesta;
 import com.reservasdyj.dominio.modelo.Rol;
 import com.reservasdyj.dominio.modelo.Usuario;
-import com.reservasdyj.dominio.servicio.usuario.ServicioGuardarUsuario;
+import com.reservasdyj.infraestructura.escenario.entidad.servicio.usuario.ServicioGuardarUsuario;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
