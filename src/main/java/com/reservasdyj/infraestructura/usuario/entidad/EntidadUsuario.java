@@ -30,10 +30,10 @@ public class EntidadUsuario {
     private String apellido;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "tipo_identificacion",nullable = true)
+    @Column(name = "tipo_identificacion")
     private EntidadTipoIdentificacion tipoIdentificacion;
 
-    @Column(name = "numero_identificacion", length = 50)
+    @Column(name = "numero_identificacion")
     private String numeroIdentificacion;
 
     @Column(unique = true, length = 50)

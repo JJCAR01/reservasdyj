@@ -12,8 +12,6 @@ public class Rol {
     public static Rol of(String nombre){
         return new Rol(nombre);
     }
-
-
     public Rol(String nombre) {
         this.nombre = nombre;
     }

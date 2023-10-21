@@ -1,6 +1,7 @@
 package com.reservasdyj.infraestructura.escenario.entidad.servicio.usuario;
 
-import com.reservasdyj.dominio.modelo.Usuario;
+import com.reservasdyj.dominio.modelo.usuario.InformacionUsuario;
+import com.reservasdyj.dominio.modelo.usuario.Usuario;
 import com.reservasdyj.dominio.puerto.RepositorioUsuario;
 import org.springframework.stereotype.Service;
 
@@ -15,10 +16,10 @@ public class ServicioActualizarUsuario {
         this.repositorioUsuario = repositorioUsuario;
     }
 
-    public Long ejecutarModificar(Usuario usuario, Long codigo){
+    public Long ejecutarModificar(InformacionUsuario informacionUsuario, Long codigo){
 
         if(this.repositorioUsuario.consultarPorId(codigo)==null) throw new IllegalStateException(MENSAJE_NO_EXISTE);
 
-        return this.repositorioUsuario.modificar(usuario,codigo);
+        return this.repositorioUsuario.modificar(informacionUsuario,codigo);
     }
 }

@@ -1,6 +1,7 @@
 package com.reservasdyj.infraestructura.escenario.entidad.servicio.usuario;
 
-import com.reservasdyj.dominio.modelo.Usuario;
+import com.reservasdyj.dominio.modelo.usuario.InformacionUsuario;
+import com.reservasdyj.dominio.modelo.usuario.Usuario;
 import com.reservasdyj.dominio.puerto.RepositorioUsuario;
 import org.springframework.stereotype.Service;
 
@@ -15,10 +16,10 @@ public class ServicioGuardarUsuario {
         this.repositorioUsuario = repositorioUsuario;
     }
 
-    public Long ejecutarGuardar(Usuario usuario){
+    public Long ejecutarGuardar(Usuario usuario, InformacionUsuario informacionUsuario){
 
         if(this.repositorioUsuario.existe(usuario)) throw new IllegalStateException(MENSAJE_YA_EXISTE);
 
-        return this.repositorioUsuario.guardar(usuario);
+        return this.repositorioUsuario.guardar(usuario,informacionUsuario);
     }
 }
