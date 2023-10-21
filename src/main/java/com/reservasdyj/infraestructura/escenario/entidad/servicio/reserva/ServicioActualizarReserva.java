@@ -1,4 +1,4 @@
-package com.reservasdyj.dominio.servicio.reserva;
+package com.reservasdyj.infraestructura.escenario.entidad.servicio.reserva;
 
 import com.reservasdyj.dominio.modelo.Reserva;
 import com.reservasdyj.dominio.modelo.usuario.Usuario;
