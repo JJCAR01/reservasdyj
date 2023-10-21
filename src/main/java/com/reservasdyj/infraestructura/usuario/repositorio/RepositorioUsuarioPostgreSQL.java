@@ -1,7 +1,8 @@
 package com.reservasdyj.infraestructura.usuario.repositorio;
 
 import com.reservasdyj.dominio.dto.DtoResumenUsuario;
-import com.reservasdyj.dominio.modelo.Usuario;
+import com.reservasdyj.dominio.modelo.usuario.InformacionUsuario;
+import com.reservasdyj.dominio.modelo.usuario.Usuario;
 import com.reservasdyj.dominio.puerto.RepositorioUsuario;
 import com.reservasdyj.infraestructura.usuario.entidad.EntidadUsuario;
 import com.reservasdyj.infraestructura.usuario.repositorio.jpa.RepositorioUsuarioJpa;
@@ -27,12 +28,12 @@ public class RepositorioUsuarioPostgreSQL implements RepositorioUsuario {
     }
 
     @Override
-    public Usuario consultarPorId(Long id) {
+    public InformacionUsuario consultarPorId(Long id) {
         return null;
     }
 
     @Override
-    public Long guardar(Usuario usuario) {
+    public Long guardar(Usuario usuario,InformacionUsuario informacionUsuario) {
         return null;
     }
 
@@ -52,7 +53,7 @@ public class RepositorioUsuarioPostgreSQL implements RepositorioUsuario {
     }
 
     @Override
-    public Long modificar(Usuario usuario, Long id) {
+    public Long modificar(InformacionUsuario informacionUsuario, Long id) {
         return null;
     }
 }

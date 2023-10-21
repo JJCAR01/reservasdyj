@@ -12,8 +12,6 @@ public class Rol {
 
         return new Rol(nombre);
     }
-
-
     public Rol(String nombre) {
         this.nombre = nombre;
     }
