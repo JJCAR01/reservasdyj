@@ -7,6 +7,6 @@ import java.util.List;
 public interface RepositorioEscenario {
     List<Escenario> listar();
     Escenario consultarPorId(Long id);
-    Long guardar(Escenario persona);
-    boolean existe(Escenario persona);
+    Long guardar(Escenario escenario);
+    boolean existe(Escenario escenario);
 }
