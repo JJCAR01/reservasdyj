@@ -8,8 +8,8 @@ import lombok.Setter;
 public class Rol {
 
     private final String nombre;
-    public static Rol of(String nombre){
 
+    public static Rol of(String nombre){
         return new Rol(nombre);
     }
     public Rol(String nombre) {

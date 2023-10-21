@@ -1,4 +1,4 @@
-package com.reservasdyj.dominio.servicio.escenario;
+package com.reservasdyj.infraestructura.escenario.entidad.servicio.escenario;
 
 import org.springframework.stereotype.Service;
 
